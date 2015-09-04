@@ -5,31 +5,31 @@
  *      Author: felix
  */
 
-//#include "ElevatorInstance.h"
-class ElevatorInstance {
+#include "ElevatorInstance.h"
 
-public:
-	int initElevatorInstance() {
-		//TODO
-		return 0;
-	}
-	int currentElevatorUnitNum() {
-		return _currentElevatorUnitNum;
-	}
-	int elevatorInstanceMode() {
-		return _elevatorInstanceMode;
-	}
-private:
-	int _currentElevatorUnitNum;
-	int _elevatorInstanceMode;
-};
-
-/*inline
-ElevatorInstance::ElevatorInstance() {
-	// TODO Auto-generated constructor stub
-
+int _currentElevatorUnitNum;
+int _elevatorInstanceMode;
+int ElevatorInstance::initElevatorInstance() {
+	return 0;
 }
-
+int ElevatorInstance::currentElevatorUnitNum() {
+	return _currentElevatorUnitNum;
+}
+int ElevatorInstance::elevatorInstanceMode() {
+	return _elevatorInstanceMode;
+}
+int ElevatorInstance::runToTargetFloor(int targetFloorNum, int elevatorInstanceNum) {
+	return 0;
+}
+int ElevatorInstance::resetElevatorInstance(int elevatorInstanceNum) {
+	return 0;
+}
+ElevatorInstance::ElevatorInstance() {
+	_currentElevatorUnitNum = 0;
+	_elevatorInstanceMode = 0;
+	// TODO Auto-generated constructor stub
+}
 ElevatorInstance::~ElevatorInstance() {
 	// TODO Auto-generated destructor stub
-}*/
+}
+

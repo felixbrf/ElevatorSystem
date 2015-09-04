@@ -5,47 +5,35 @@
  *      Author: felix
  */
 
-//#include "ElevatorInstance.cpp"
-//#include "ElevatorController.cpp"
-//#include "ElevatorFloor.cpp"
-#ifndef CLASS_ELEVATORCONF_CPP
-#define CLASS_ELEVATORCONF_CPP
-class ElevatorInstance;
-class ElevatorController;
-class ElevatorFloor;
-class ElevatorConf {
-public:
-	int initElevatorConf() {
-		return 0;
-	}
-	int loadElevatorInstanceConf() {
-		return 0;
-	}
-	int loadElevatorContorllerConf() {
-		return 0;
-	}
-	int loadElevatorFloorConf() {
-		return 0;
-	}
-	int saveElevatorInstanceConf(ElevatorInstance* elevatorInstance) {
-		return 0;
-	}
-	int saveElevatorControllerConf(ElevatorController* elevatorController) {
-		return 0;
-	}
-	int saveElevatorFloorConf(ElevatorFloor* elevatorFloor) {
-		return 0;
-	}
-};
+#include "ElevatorConf.h"
 
-/*inline
+int ElevatorConf::initElevatorConf(void) {
+	return 0;
+}
+int ElevatorConf::loadElevatorInstanceConf() {
+	return 0;
+}
+int ElevatorConf::loadElevatorContorllerConf() {
+	return 0;
+}
+int ElevatorConf::loadElevatorFloorConf() {
+	return 0;
+}
+int ElevatorConf::saveElevatorInstanceConf(ElevatorInstance* elevatorInstance) {
+	return 0;
+}
+int ElevatorConf::saveElevatorControllerConf(
+		ElevatorController* elevatorController) {
+	return 0;
+}
+int ElevatorConf::saveElevatorFloorConf(ElevatorFloor* elevatorFloor) {
+	return 0;
+}
 ElevatorConf::ElevatorConf() {
 	// TODO Auto-generated constructor stub
-
 }
-
 ElevatorConf::~ElevatorConf() {
 	// TODO Auto-generated destructor stub
-}*/
-
-#endif
+}
+const int ElevatorConf::ELEVATOR_INSTANCE_NUM = 4;
+const int ElevatorConf::ELEVATOR_FLOOR_NUM = 10;

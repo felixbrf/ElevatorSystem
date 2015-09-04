@@ -5,34 +5,24 @@
  *      Author: felix
  */
 
-//#include "ElevatorController.h"
+#include "ElevatorController.h"
 
-#ifndef CLASS_ELEVATORCONTROLLER_CPP
-#define CLASS_ELEVATORCONTROLLER_CPP
-class ElevatorInstance;
-class ElevatorController {
-public:
-	int initElevatorController() {
-		return 0;
-	}
-	int controlElevatorInstanceRunToTargetFloor(int elevatorInstanceNum, int targetFloorNum) {
-		return 0;
-	}
-	int controlElevatorInstanceOpenDoor(ElevatorInstance* elevatorInstance) {
-		return 0;
-	}
-	int controlElevatorInstanceCloseDoor(ElevatorInstance* elevatorInstnace) {
-		return 0;
-	}
-};
-/*inline
+int ElevatorController::initElevatorController() {
+	return 0;
+}
+int ElevatorController::controlElevatorInstanceRunToTargetFloor(int elevatorInstanceNum,
+		int targetFloorNum) {
+	return 0;
+}
+int ElevatorController::controlElevatorInstanceOpenDoor(ElevatorInstance* elevatorInstance) {
+	return 0;
+}
+int ElevatorController::controlElevatorInstanceCloseDoor(ElevatorInstance* elevatorInstnace) {
+	return 0;
+}
 ElevatorController::ElevatorController() {
 	// TODO Auto-generated constructor stub
-
 }
-
 ElevatorController::~ElevatorController() {
 	// TODO Auto-generated destructor stub
-}*/
-
-#endif
+}

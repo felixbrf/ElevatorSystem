@@ -7,11 +7,11 @@
 //============================================================================
 
 #include <iostream>
-#include "ElevatorInstance.cpp"
-#include "ElevatorController.cpp"
-#include "ElevatorApplication.cpp"
-#include "ElevatorConf.cpp"
-#include "ElevatorFloor.cpp"
+#include "ElevatorInstance.h"
+#include "ElevatorController.h"
+#include "ElevatorApplication.h"
+#include "ElevatorConf.h"
+#include "ElevatorFloor.h"
 using namespace std;
 
 int main() {
