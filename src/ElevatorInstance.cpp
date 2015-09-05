@@ -18,7 +18,10 @@ int ElevatorInstance::currentElevatorUnitNum() {
 int ElevatorInstance::elevatorInstanceMode() {
 	return _elevatorInstanceMode;
 }
-int ElevatorInstance::runToTargetFloor(int targetFloorNum, int elevatorInstanceNum) {
+int ElevatorInstance::requestRunToTargetFloor(int targetFloorNum, int elevatorInstanceNum) {
+	return 0;
+}
+int ElevatorInstance::responseRunToTargetFloor(int targetFloorNum, int elevatorInstanceNum) {
 	return 0;
 }
 int ElevatorInstance::resetElevatorInstance(int elevatorInstanceNum) {

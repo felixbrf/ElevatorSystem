@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <iostream>
+#include <pthread.h>
 #include "ElevatorInstance.h"
 #include "ElevatorController.h"
 #include "ElevatorApplication.h"
@@ -18,5 +19,7 @@ int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	ElevatorInstance elevatorInstance;
 	cout << "currentElevatorNum" << elevatorInstance.currentElevatorUnitNum() << endl;
+	ElevatorApplication elevatorApplication;
+	elevatorApplication.startElevatorSystem();
 	return 0;
 }

@@ -5,19 +5,22 @@
  *      Author: felix
  */
 
+#include <iostream>
 #ifndef ELEVATORFLOOR_H_
 #define ELEVATORFLOOR_H_
-
+using namespace std;
 class ElevatorInstance;
 class ElevatorApplication;
 class ElevatorConf;
 class ElevatorController;
 class ElevatorFloor {
 public:
-	int initElevatorFloor();
-	int upwardRequest(int elevatorFloorNum, int elevatorInstanceNum);
-	int downwardRequest(int elevatorFloorNum, int elevatorInstanceNum);
+	int initElevatorFloor(void);
+	int upwardRequest(int elevatorFloorNum);
+	int downwardRequest(int elevatorFloorNum);
+	// TBD
 	int cancelUpwardRequest(int elevatorFloorNum, int elevatorInstanceNum);
+	// TBD
 	int cancelDownwardRequest(int elevatorFloorNum, int elevatorInstanceNum);
 	ElevatorFloor();
 	virtual ~ElevatorFloor();

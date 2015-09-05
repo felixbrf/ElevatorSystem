@@ -29,11 +29,12 @@ int ElevatorConf::saveElevatorControllerConf(
 int ElevatorConf::saveElevatorFloorConf(ElevatorFloor* elevatorFloor) {
 	return 0;
 }
+int ElevatorConf::elevatorInstanceNum(void) {
+	return 0;
+}
 ElevatorConf::ElevatorConf() {
 	// TODO Auto-generated constructor stub
 }
 ElevatorConf::~ElevatorConf() {
 	// TODO Auto-generated destructor stub
 }
-const int ElevatorConf::ELEVATOR_INSTANCE_NUM = 4;
-const int ElevatorConf::ELEVATOR_FLOOR_NUM = 10;

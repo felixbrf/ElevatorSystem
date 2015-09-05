@@ -6,13 +6,14 @@
  */
 
 #include "ElevatorFloor.h"
+
 int ElevatorFloor::initElevatorFloor() {
 	return 0;
 }
-int ElevatorFloor::upwardRequest(int elevatorFloorNum, int elevatorInstanceNum) {
+int ElevatorFloor::upwardRequest(int elevatorFloorNum) {
 	return 0;
 }
-int ElevatorFloor::downwardRequest(int elevatorFloorNum, int elevatorInstanceNum) {
+int ElevatorFloor::downwardRequest(int elevatorFloorNum) {
 	return 0;
 }
 int ElevatorFloor::cancelUpwardRequest(int elevatorFloorNum, int elevatorInstanceNum) {

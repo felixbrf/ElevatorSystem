@@ -5,9 +5,10 @@
  *      Author: felix
  */
 
+#include <iostream>
 #ifndef ELEVATORCONTROLLER_H_
 #define ELEVATORCONTROLLER_H_
-
+using namespace std;
 class ElevatorInstance;
 class ElevatorApplication;
 class ElevatorConf;

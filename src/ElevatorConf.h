@@ -5,15 +5,20 @@
  *      Author: felix
  */
 
+#include <iostream>
 #ifndef ELEVATORCONF_H_
 #define ELEVATORCONF_H_
+#define ELEVATOR_INSTANCE_NUM 4
+#define ELEVATOR_FLOOR_NUM 10
+using namespace std;
 class ElevatorInstance;
 class ElevatorController;
 class ElevatorFloor;
 class ElevatorApplication;
 class ElevatorConf {
-	const static int ELEVATOR_INSTANCE_NUM;
-	const static int ELEVATOR_FLOOR_NUM;
+	enum ELEVATOR_INSTANCE_DOOR_PRIORITY {
+		CUSTOMER_OPER, ADMIN_OPER
+	};
 public:
 	int initElevatorConf(void);
 	int loadElevatorInstanceConf();
@@ -22,6 +27,7 @@ public:
 	int saveElevatorInstanceConf(ElevatorInstance* elevatorInstance);
 	int saveElevatorControllerConf(ElevatorController* elevatorController);
 	int saveElevatorFloorConf(ElevatorFloor* elevatorFloor);
+	int elevatorInstanceNum(void);
 	ElevatorConf();
 	virtual ~ElevatorConf();
 };
